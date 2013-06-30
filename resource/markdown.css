@@ -1,0 +1,14 @@
+html {
+  background: #f0f0f0;
+}
+body {
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.7;
+  font-family: Verdana, Meiryo, serif;
+}
+pre {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 8px 20px;
+}

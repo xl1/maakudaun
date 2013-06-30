@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "maakudaun",
+  "version": "1.0",
+  "background": {
+    "scripts": [
+      "/resource/background.js"
+    ]
+  },
+  "page_action": {
+    "default_icon": "/resource/icon.png",
+    "default_title": "markdown this page"
+  },
+  "content_scripts": [{
+    "js": [
+      "/resource/content_script.js"
+    ],
+    "matches": [
+      "*://*/*",
+      "file:///*/*"
+    ]
+  }],
+  "permissions": [
+    "tabs",
+    "*://*/*",
+    "file:///*/*"
+  ]
+}
