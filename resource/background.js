@@ -9,7 +9,7 @@
       chrome.tabs.insertCSS(id, {file: '/resource/markdown.css' });
     }
   };
-  chrome.extension.onRequest.addListener(function(request, sender, callback) {
+  chrome.runtime.onMessage.addListener(function(request, sender, callback) {
     if(commands.hasOwnProperty(request)) commands[request](sender.tab.id);
   });
   chrome.pageAction.onClicked.addListener(function(tab) {

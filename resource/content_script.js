@@ -2,9 +2,9 @@
   var first = document.body.firstElementChild;
   if(!first) return;
   if(first.textContent === document.body.textContent){
-    chrome.extension.sendRequest('showPageAction');
+    chrome.runtime.sendMessage('showPageAction');
     if(/\.(markdown|md)$/.test(document.URL)){
-      chrome.extension.sendRequest('markdownize');
+      chrome.runtime.sendMessage('markdownize');
     }
   }
 })();

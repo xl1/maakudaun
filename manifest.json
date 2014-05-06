@@ -5,7 +5,8 @@
   "background": {
     "scripts": [
       "/resource/background.js"
-    ]
+    ],
+    "persistent": false
   },
   "page_action": {
     "default_icon": "/resource/icon.png",
